@@ -1,0 +1,41 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+    <link rel="stylesheet" type="text/css" href="{% static '/home.css' %}" /> 
+    <script src="{% static '/javascript/home.js' %}"></script> 
+
+{% endblock %}
+
+{% block MessageTitle %}<h1>Welcome back, Balázs!</h1>{% endblock %}
+{% block MessageContent%}<h3>You have <span>9 new</span> notification.</h3>{% endblock %}
+
+{% block HomeContent %}
+
+<nav class="UI_Navigation_Menu">
+    <li href="#" class="UI_Navigation_Tag is-active" active-color="orange">Reccomendations</li>
+    <li href="#" class="UI_Navigation_Tag" active-color="green">News</li>
+    <li href="#" class="UI_Navigation_Tag" active-color="blue">Widgets</li>
+</nav>
+
+<div class="UI_Summa">
+    <div class="UI_Summa_Tag UI_Summa_Tag_1">
+        <h2>Weather</h2>
+    </div>
+    <div class="UI_Summa_Tag UI_Summa_Tag_2">
+        <h2>Health</h2>
+    </div>
+    <div class="UI_Summa_Tag UI_Summa_Tag_3">
+        <h2>Calendar</h2>
+    </div>
+    <div class="UI_Summa_Tag UI_Summa_Tag_4">
+        <h2>Notes & ToDos</h2>
+    </div>
+    <div class="UI_Summa_Tag UI_Summa_Tag_5">
+        <h2>Devices</h2>
+    </div>
+    <div class="UI_Summa_Tag UI_Summa_Tag_6">
+        <h2>Phone</h2>
+    </div>
+</div>
+{% endblock %}
