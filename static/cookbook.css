@@ -16,14 +16,18 @@
     padding: 20px;
     text-decoration: none;
     z-index: 1;
-    margin-right:40px;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     position: relative;
 
     cursor: pointer;
     
-  }
+}
+
+.UI_Navigation_Tag:not(:last-child)
+{
+    margin-right:40px;
+}
 
 .UI_Navigation_Tag:not(.is-active):hover { 
     color: rgb(95, 95, 95); 
@@ -99,8 +103,8 @@
 
 .frame 
 {
-    height: 100px;
-    line-height: 100px;
+    height: 90px;
+    line-height: 90px;
     overflow: hidden;
 
     margin-bottom:30px;
@@ -119,7 +123,7 @@
 {
     float: left;
 
-    width: 180px;
+    width: 160px;
     height: 100%;
     margin: 0 10px 0 0;
     padding: 0;
@@ -269,6 +273,94 @@
     align-items: flex-end;
 
 }
+
+.UI_Menu_Searchbar
+{
+    width:650px;
+    height:40px;
+
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 18px 1px rgb(186 186 186 / 5%);
+    box-shadow: 0px 0px 18px 1px rgb(186 186 186 / 5%);
+    backdrop-filter: blur(2px);
+
+    margin:0px auto 40px;
+    box-sizing:border-box;
+    padding:0px 10px;
+
+    display: flex;
+    overflow: hidden;
+}
+
+.UI_Menu_Searchbar input
+{
+    width:100%;
+    height:100%;
+    border:0;
+
+    font-weight: 500;
+    color:#83818c;
+
+    background-color: transparent;
+}
+
+.UI_Menu_Searchbar input:focus, input:visited, input:hover, input:active
+{
+    outline: none;
+}
+
+.UI_Menu_Searchbar svg
+{
+    margin-top:10px;
+    transition: stroke .4s;
+}
+
+
+#UI_Recepies_Container 
+{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+
+    
+}
+
+#UI_Recepies_Container th 
+{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    color: #333;
+    padding: 20px;
+
+}
+
+#UI_Recepies_Container td
+{
+    padding:20px;
+    color:#83818c;
+
+    overflow: hidden;
+}
+
+#UI_Recepies_Container tr:nth-child(1)
+{
+    background-color: rgba(255, 255, 255, 0.507);
+    border-radius: 20px;
+
+    -webkit-box-shadow: 0px 0px 18px 1px rgba(186,186,186,0.05); 
+    box-shadow: 0px 0px 18px 1px rgba(186,186,186,0.05);
+
+    backdrop-filter:blur(2px);
+}
+
+#UI_Recepies_Container tr:not(:first-child)
+{
+    border-bottom: 1px solid  #e0e0e07a;
+}
+
+
+/*responsive*/
 
 @media screen and (max-width: 1500px) {
     .frame 
