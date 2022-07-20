@@ -62,22 +62,11 @@ $(document).ready(function(){
     i = $(this).index();
     k = i - 1;
 
-
     $(".UI_All_Container_Page").not( ":nth-child(" + k + ")" ).css({'left': '-5000px','opacity':'0'});
-    if(k = 2)
-    {
-      $(".UI_All_Container_Page").eq(0).css({'left': '-5000px'});
-    }
-    if(i != 1)
-    {
-      $(".UI_Menu_Searchbar_Tag svg").css({'stroke':'#ab52ff'});
 
-      $(".UI_Menu_Searchbar input").attr('placeholder', 'Search in menu..');
-    }else
+    if(k == 2)
     {
-      $(".UI_Menu_Searchbar_Tag svg").css({'stroke':'#fcbf00'});
-
-      $(".UI_Menu_Searchbar input").attr('placeholder', 'Search in recepies..');
+      $(".UI_All_Container_Page").eq(1).css({'left': '-5000px','opacity':'0'});
     }
 
     $(".UI_All_Container_Page").eq(i).css({'left': '0','opacity':'1'});

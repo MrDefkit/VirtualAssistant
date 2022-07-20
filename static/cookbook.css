@@ -32,7 +32,9 @@
 .UI_Navigation_Tag:not(.is-active):hover { 
     color: rgb(95, 95, 95); 
 }
-.UI_Navigation_Menu li:after{
+
+.UI_Navigation_Menu li:after
+{
     display: block;
     content: '';
     -webkit-transform: scaleX(0.0001);
@@ -40,8 +42,7 @@
     transform: scaleX(0.0001);  
     -webkit-transition: -webkit-transform 250ms ease-in-out;
     transition: transform 250ms ease-in-out;
-}
-.UI_Navigation_Menu li:after{
+    
     margin-top:10px;
     border-top: solid 4px rgb(95, 95, 95); 
     border-radius: 4px;
